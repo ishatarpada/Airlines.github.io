@@ -1,0 +1,46 @@
+@media (max-width:1300px) and (min-width:775px) {
+
+    .header-container .header-menu .header-upMenu .header-listMenu {
+        display: none;
+    }
+
+    .header-container .header-menu .header-upMenu .header-sideMenu {
+        display: block;
+    }
+
+    .content-container {
+        width: 80%;
+        margin: auto;
+        display: block;
+        border: 2px solid black;
+    }
+
+    .content-container .content-section1 {
+        width: 100%;
+        margin: auto;
+    }
+
+    .content-container .content-section2 {
+        width: 100%;
+        margin: auto;
+    }
+
+    .content-container .content-section2 .client-section .client-part-2 .quote {
+        height: 210px;
+    }
+
+    .content-container .content-section2 .sales-section .sales-list {
+        display: block;
+    }
+
+    .content-container .content-section2 .sales-section .sales-list .sales-items {
+        width: 80%;
+        margin: auto
+    }
+
+
+    .content-container .content-section2 .sales-section .sales-list .sales-items li a {
+        font-size: 18px;
+    }
+
+}
