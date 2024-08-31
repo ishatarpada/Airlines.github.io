@@ -1,152 +1,4 @@
 /* main section start */
-.content-container {
-    height: auto;
-    width: 80%;
-    margin: auto;
-    display: flex;
-}
-
-.content-container .content-section1 {
-    height: auto;
-    width: 40%;
-    display: grid;
-    gap: 10px;
-    grid-template-rows: repeat(1fr, auto);
-    grid-template-columns: repeat(1fr, auto);
-    background-color: #f4f4f4;
-}
-
-
-.content-container .content-section1 .grid-section {
-    height: auto;
-    width: auto;
-    margin: 5px;
-}
-
-.content-container .content-section1 .title-form {
-    grid-area: 1 / 1 / 2 / 12;
-}
-
-.content-container .content-section1 .title-form p {
-    text-align: center;
-    font-style: italic;
-    font-size: 30px;
-    color: #3c4046;
-    padding: 5px;
-}
-
-.content-container .content-section1 .form {
-    grid-area: 2 / 1 /7 / 12;
-}
-
-.content-container .content-section1 .form .section {
-    height: auto;
-    width: 90%;
-    margin: auto;
-    padding: 10px;
-}
-
-.content-container .content-section1 .form .radio-section .radio-btn {
-    height: auto;
-    width: 90%;
-    display: flex;
-    margin: auto;
-}
-
-.content-container .content-section1 .form .radio-section .radio-btn .radio {
-    height: auto;
-    width: 45%;
-    margin: auto;
-}
-
-.content-container .content-section1 .form .radio-section .radio-btn .radio input {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #3c4046;
-}
-
-.content-container .content-section1 .form .section .label,
-.input {
-    height: auto;
-    width: 90%;
-    margin: 2px auto;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #3c4046;
-}
-
-.content-container .content-section1 .form .section .input input {
-    height: auto;
-    width: 90%;
-    padding: 5px;
-    margin: auto;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #3c4046;
-    border: 1px solid #666769;
-}
-
-.content-container .content-section1 .form .date-section .label,
-.input {
-    height: auto;
-    width: 90%;
-    margin: auto;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #3c4046;
-}
-
-.content-container .content-section1 .form .date-section .input input {
-    height: auto;
-    width: auto;
-    padding: 5px;
-    margin: auto;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #3c4046;
-    border: 1px solid #666769;
-}
-
-.content-container .content-section1 .form .passenger-section .passenger {
-    height: auto;
-    width: 100%;
-    margin: auto;
-    display: flex;
-}
-
-.content-container .content-section1 .form .passenger-section .passenger .noPassenger {
-    height: auto;
-    width: 65%;
-    margin: auto;
-}
-
-.content-container .content-section1 .form .passenger-section .passenger .goBtn {
-    height: auto;
-    width: 30%;
-    margin: auto;
-    background-image: linear-gradient(#6ea6bb, #59a5bd, #3a8fb4, #257b9a);
-}
-
-.content-container .content-section1 .form .passenger-section .passenger .goBtn button {
-    height: auto;
-    width: 100%;
-    margin: 10px auto;
-    padding: 10px 5px;
-    border: none;
-    background: transparent;
-}
-
-.content-container .content-section1 .form .passenger-section .passenger .goBtn:hover {
-    background-image: linear-gradient(to top, #6ea6bb, #59a5bd, #3a8fb4, #257b9a);
-}
-
-
-.content-container .content-section1 .form .passenger-section .passenger .goBtn button a {
-    text-decoration: none;
-    color: white;
-    font-style: italic;
-    font-weight: 600;
-}
 
 .content-container .content-section1 .reviews {
     grid-area: 7 / 1 / 11 / 12;
@@ -158,7 +10,7 @@
 .content-container .content-section1 .reviews h1 {
     text-align: center;
     font-style: italic;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 35px;
     color: #464646;
 }
@@ -172,10 +24,13 @@
 }
 
 .content-container .content-section1 .reviews .news p {
+    font-size: 18px;
     color: #257b9a;
 }
 
+
 .content-container .content-section1 .reviews .news span {
+    font-size: 16px;
     color: #3c4046;
 }
 
@@ -204,15 +59,17 @@
 .content-container .content-section2 .welcome-section h2 {
     font-style: italic;
     color: #535459;
-    font-weight: 400;
-    margin-bottom: 2%;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5%;
     padding: 0px 40px;
+    font-size: 35px;
 }
 
 .content-container .content-section2 .welcome-section p {
     color: #1e749a;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: serif;
     line-height: 25px;
     padding: 0px 40px;
 }
@@ -227,8 +84,8 @@
 .content-container .content-section2 .welcome-section .home-content h5 {
     padding: 8px 40px;
     color: black;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-family: serif;
     font-weight: 600;
 }
 
@@ -240,28 +97,29 @@
 }
 
 .content-container .content-section2 .welcome-section .home-content p {
-    font-size: 16px;
+    font-size: 20px;
     color: #3c4046;
     padding: 0px 60px;
     font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: serif;
 }
 
-.content-container .content-section2 .welcome-section .home-content .home-content-btn{
+.content-container .content-section2 .welcome-section .home-content .home-content-btn {
     width: auto;
     height: auto;
     display: flex;
     flex-direction: row-reverse;
 }
 
-.content-container .content-section2 .welcome-section .home-content .home-content-btn .btn{
+.content-container .content-section2 .welcome-section .home-content .home-content-btn .btn {
     height: auto;
     width: auto;
 }
 
-.content-container .content-section2 .welcome-section .home-content .home-content-btn .btn button{
+.content-container .content-section2 .welcome-section .home-content .home-content-btn .btn button {
     background-image: linear-gradient(black, #333435);
     border: none;
+    font-size: 18px;
     padding: 10px;
 }
 
@@ -269,7 +127,7 @@
     background-image: linear-gradient(#59a6bd, #3a8fb4, #257b9a, #1e749a);
 }
 
-.content-container .content-section2 .welcome-section .home-content .home-content-btn .btn button a{
+.content-container .content-section2 .welcome-section .home-content .home-content-btn .btn button a {
     text-decoration: none;
     color: white;
     text-align: center;
@@ -308,18 +166,19 @@
     color: #3c4046;
     padding: 5px;
     line-height: 25px;
-    margin: 5px;
+    margin: 2.5px;
     word-spacing: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-family: serif;
 }
 
 .content-container .content-section2 .client-section .client-part-1 p strong {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: serif;
 }
 
 .content-container .content-section2 .client-section .client-part-1 p a {
     color: #1e749a;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: serif;
 }
 
 .content-container .content-section2 .client-section .client-part-2 {
@@ -329,7 +188,8 @@
     background-image: linear-gradient(#59a6bd, #3a8fb4, #257b9a, #1e749a);
 }
 
-.content-container .content-section2 .client-section .client-part-2 .quote{
+
+.content-container .content-section2 .client-section .client-part-2 .quote {
     height: 220px;
     width: 85%;
     padding: 20px;
@@ -337,13 +197,13 @@
     position: relative;
 }
 
-.content-container .content-section2 .client-section .client-part-2 .quote img{
+.content-container .content-section2 .client-section .client-part-2 .quote img {
     position: absolute;
     top: 4%;
     left: 5%;
 }
 
-.content-container .content-section2 .client-section .client-part-2 .quote .quote-content{
+.content-container .content-section2 .client-section .client-part-2 .quote .quote-content {
     height: auto;
     width: 80%;
     margin: auto;
@@ -352,16 +212,97 @@
     left: 5%;
 }
 
-.content-container .content-section2 .client-section .client-part-2 .quote .quote-content p{
+.content-container .content-section2 .client-section .client-part-2 .quote .quote-content p {
     color: white;
     font-size: 15px;
     line-height: 20px;
 }
 
-.content-container .content-section2 .client-section .client-part-2 .quote .quote-content p span{
+.content-container .content-section2 .client-section .client-part-2 .quote .quote-content p span {
     display: block;
     text-align: end;
     padding-top: 10px;
 }
 
 /* main section end */
+
+
+/* Responsive styles */
+
+/* For tablets (768px and above) */
+@media (max-width: 1024px) {
+    .content-container .content-section2 .client-section .client-part-2 {
+        width: 50%;
+        /* Increase width on tablets */
+    }
+
+    .content-container .content-section2 .client-section .client-part-2 .quote {
+        height: 200px;
+        width: 90%;
+    }
+
+    .content-container .content-section2 .client-section .client-part-2 .quote .quote-content p {
+        font-size: 14px;
+        /* Slightly smaller text */
+    }
+}
+
+/* For large mobile devices (between 576px and 768px) */
+@media (max-width: 768px) {
+    .content-container {
+        flex-wrap: nowrap;
+    }
+
+    .content-container .content-section1 {
+        width: 40%;
+    }
+
+    .content-container .content-section2 {
+        width: 60%;
+    }
+
+    .content-container .content-section2 .client-section .client-part-2 {
+        width: 70%;
+        /* Further increase width */
+    }
+
+    .content-container .content-section2 .client-section .client-part-2 .quote {
+        height: 180px;
+        width: 95%;
+    }
+
+    .content-container .content-section2 .client-section .client-part-2 .quote .quote-content p {
+        font-size: 13px;
+        /* Smaller text for smaller screens */
+    }
+}
+
+/* For small mobile devices (below 576px) */
+@media (max-width: 576px) {
+    .content-container .content-section2 .client-section .client-part-2 {
+        width: 90%;
+    }
+
+    .content-container .content-section2 .client-section .client-part-2 .quote {
+        height: auto;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .content-container .content-section2 .client-section .client-part-2 .quote img {
+        top: 2%;
+        left: 4%;
+        width: 40px;
+    }
+
+    .content-container .content-section2 .client-section .client-part-2 .quote .quote-content {
+        top: 5%;
+        left: 10%;
+        width: 75%;
+    }
+
+    .content-container .content-section2 .client-section .client-part-2 .quote .quote-content p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}

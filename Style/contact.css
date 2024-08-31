@@ -1,183 +1,139 @@
-/* .header-container .header-menu .header-upMenu .header-listMenu ul li:nth-child(5) a {
-    background-color: black;
-    border-radius: 5px;
-} */
-
-/* main section start */
-
-.contact-container{
-    height: auto;
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.contact-container .contact-section1{
-    height: auto;
-    width: 35%;
-    margin: auto;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-
-.contact-container .contact-section1 .contact-us-part{
-    height: auto;
-    width: 90%;
-    margin: 5px auto;
-}
-
-.contact-container .contact-section1 .contact-us-part h2{
+h2 {
     font-style: italic;
     color: #535459;
     font-weight: 400;
-    margin-bottom: 2%;
-    padding: 0px 40px;
+    margin-bottom: 10px;
 }
 
-.contact-container .contact-section1 .contact-us-part .contact-us-container{
-    height: auto;
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-wrap:nowrap;
-}
-
-.contact-container .contact-section1 .contact-us-part .contact-us-container .contact-us-box{
-    height: auto;
-    width: 50%;
-    margin: auto;
-    padding: 10px;
-}
-
-.contact-container .contact-section1 .contact-us-part .contact-us-container .contact-us-box li{
-    list-style: none;
-    color: #3c4046;
-    padding-top: 5px;
-    font-size: 18px;
-    margin: 2%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.contact-container .contact-section1 .contact-us-part .contact-us-container .contact-us-box li a{
+a {
     color: #1e749a;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    text-decoration: none;
 }
 
-.contact-container .contact-section1 .Miscellaneous-info-part{
-    height: auto;
-    width: 90%;
-    margin: auto;
-    margin-top: 2%;
+a:hover {
+    text-decoration: underline;
 }
 
-.contact-container .contact-section1 .Miscellaneous-info-part h2{
-    font-style: italic;
-    color: #535459;
-    font-weight: 400;
-    margin-bottom: 2%;
-    padding: 0px 40px;
-}
-
-.contact-container .contact-section1 .Miscellaneous-info-part p{
-    color: #3c4046;
-    width: 80%;
-    margin: auto; 
-    font-size: 18px;
-    line-height: 24px;
-    font-family: Arial, Helvetica, sans-serif;   
-}
-
-.contact-container .contact-section2{
-    height: auto;
-    width: 65%;
-    margin: auto;
-}
-
-.contact-container .contact-section2 .contact-form{
-    height: auto;
-    width: 90%;
-    margin: auto;
-}
-
-.contact-container .contact-section2 .contact-form h2{
-    font-style: italic;
-    color: #535459;
-    font-weight: 400;
-    margin-bottom: 2%;
-    padding: 0px 40px;
-}
-
-.contact-container .contact-section2 .contact-form .form-part{
-    height: auto;
-    width: 90%;
-    margin: 5px auto;
+/* Responsive container */
+.contact-container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
 }
 
-.contact-container .contact-section2 .contact-form .form-part .form-label{
-    height: auto;
-    width: 20%;
-    margin: auto;
-    padding: 10px;
+@media (min-width: 768px) {
+    .contact-container {
+        flex-direction: row;
+        gap: 20px;
+    }
 }
 
-.contact-container .contact-section2 .contact-form .form-part .form-label label{
-    color: #3c4046;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif; 
+/* Left section */
+.contact-section1 {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-.contact-container .contact-section2 .contact-form .form-part .form-input{
-    height: auto;
-    width: 80%;
-    margin: auto;
-    padding: 5px;
+@media (min-width: 768px) {
+    .contact-section1 {
+        margin-bottom: 0;
+    }
+}
+
+.contact-us-part,
+.Miscellaneous-info-part {
+    margin-bottom: 20px;
+}
+
+.contact-us-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-us-box {
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+.contact-us-box li {
+    list-style: none;
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+.Miscellaneous-info-part p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Right section */
+.contact-section2 {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-part {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-label {
+    flex: 1 1 100%;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .form-label {
+        flex: 0 0 20%;
+    }
+}
+
+.form-input {
+    flex: 1;
     background-color: #f8f8f8;
-    border-top: 1px solid #c6c6c6;
-    border-left: 1px solid #c6c6c6;
+    padding: 10px;
+    border: 1px solid #c6c6c6;
 }
 
-.contact-container .contact-section2 .contact-form .form-part .form-input input , textarea{
-    height: auto;
+.form-input input,
+.form-input textarea {
     width: 100%;
-    color: #9d9fa2;
     border: none;
-    font-family: Arial, Helvetica, sans-serif; 
     background-color: transparent;
+    color: #3c4046;
+    font-size: 16px;
 }
 
-.contact-container .contact-section2 .contact-form .form-part .form-input input:focus , textarea:focus{
-    border: none;
+.form-input input:focus,
+.form-input textarea:focus {
     outline: none;
 }
 
-.contact-container .contact-section2 .contact-form .form-part .form-button{
-    height: auto;
-    width: 90%;
-    margin: 5px auto;
+.form-button {
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
-.contact-container .contact-section2 .contact-form .form-part .form-button button{
-    height: auto;
-    width: auto;
-    padding: 10px 40px;
+.form-button button {
+    padding: 10px 20px;
     color: white;
-    background-image: linear-gradient(to top ,black, #4a4c4d);
+    background-color: #333;
     border: none;
-    font-style: italic;
-    font-weight: 500;
-    letter-spacing: 2px;
-    margin: auto 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
-.contact-container .contact-section2 .contact-form .form-part .form-button button:hover{
-    background-image: linear-gradient(to bottom ,black, #4a4c4d);
+.form-button button:hover {
+    background-color: #555;
 }
-
-/* main section end */

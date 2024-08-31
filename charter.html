@@ -11,8 +11,7 @@
     <!-- charter page css -->
     <link rel="stylesheet" href="Style/charter.css">
     <!-- media query css -->
-    <link rel="stylesheet" href="Style/media-1.css">
-    <link rel="stylesheet" href="Style/media-2.css">
+    <link rel="stylesheet" href="Style/media.css">
 
     <!-- font-awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -26,47 +25,28 @@
 <body>
 
     <!-- header start-->
-    <div class="header-container">
-        <div class="header-logo">
-            <div class="logo-img">
-                <img src="Assets/logo.png" alt="" height="100%" width="100%">
+    <header>
+        <input type="checkbox" name="" id="toggler" />
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo"><img src="Assets/logo.png" alt="" /></a>
+
+        <div class="list">
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="aircraft.html">Aircraft</a>
+                <a href="charter.html">Charter</a>
+                <a href="safety.html">Safety</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="icons">
+                <a href="#" class="fa-solid fa-house" style="color: #525356"></a>
+                <a href="#" class="fa-regular fa-envelope" style="color: #525356"></a>
+                <a href="#" class="fa-solid fa-plane-departure" style="color: #525356"></a>
             </div>
         </div>
-        <div class="header-menu">
-            <div class="header-icon">
-                <div class="icon icon1">
-                    <i class="fa-solid fa-house" style="color: #525356;"></i>
-                </div>
-                <div class="icon icon2">
-                    <i class="fa-regular fa-envelope" style="color: #525356;"></i>
-                </div>
-                <div class="icon icon3">
-                    <i class="fa-solid fa-plane-departure" style="color: #525356;"></i>
-                </div>
-            </div>
-            <div class="header-upMenu">
-                <div class="header-listMenu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="aircraft.html">Our Aircraft</a></li>
-                        <li><a href="safety.html">Safety</a></li>
-                        <li><a href="charter.html">Charters</a></li>
-                        <li><a href="contact.html">Contacts</a></li>
-                    </ul>
-                </div>
-                <div class="header-sideMenu">
-                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-                    <ul class="menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="aircraft.html">Our Aircraft</a></li>
-                        <li><a href="safety.html">Safety</a></li>
-                        <li><a href="charter.html">Charters</a></li>
-                        <li><a href="contact.html">Contacts</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    </header>
     <!-- header end -->
 
     <!-- carousal start  -->
@@ -199,7 +179,12 @@
                     </div>
                 </div>
                 <div class="service-info">
-                    <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                    <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
+                        voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a
+                        sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
+                        doloribus asperiores repellat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                        veritatis.</p>
                 </div>
                 <div class="charter-service-button">
                     <button><a href="#">Read More</a></button>
@@ -213,12 +198,17 @@
                     </div>
                     <div class="charter-content">
                         <p>
-                            Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus omnis assumenda.
+                            Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
+                            nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
+                            possimus omnis assumenda.
                         </p>
                     </div>
                 </div>
                 <div class="charter-info">
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fugat harum quidem rerum.</p>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                        provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
+                        dolorum fugat harum quidem rerum.</p>
                 </div>
             </div>
         </div>
